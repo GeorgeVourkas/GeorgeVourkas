@@ -1,63 +1,89 @@
 *{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-body{
     padding: 0;
     margin: 0;
-    height: 100vh;
-    background: linear-gradient(to right,rgb(85, 0, 255),black);
+    font-family: "Inter Tight",sans-serif;
 }
-/*-------------Header----------------*/
-#header{
-    position: absolute;
-    top:0;
-    display: flex;
+body{
+    background-color:rgb(223,219,0);
+}
+
+header{
     width: 100%;
-    height: 70px;
+    height: 12vh;
+    background-color: rgb(223,219, 0);
+    display: flex;
     align-items: center;
-    justify-content:right;
-    background-color: rgba(255, 255, 255, 0.3);
+    justify-content: center;
 }
 
-#header button{
-    background-color: transparent;
-    border: none;
-    margin-right:15px;
-    color:white;
-    cursor: pointer;
-    font-size: 1rem;
-    height: 40px;
-    width: 100px;
+header img{
+    height:110px
+}
 
-}
-#header button:hover{
-    background-color:rgb(85, 0, 255);
-    border-radius: 15px;
-    transition: all 0.5s ease;
-
-}
-#header button:active{
-    background-color:rgba(37, 37, 37, 0.8);
-    border-radius: 15px;
-}
-/*-------------Footer----------------*/
-#footer{
+main{
     width: 100%;
-    height:50px;
-    position: absolute;
-    bottom: 0;
+    height: 88vh;
+    background-color:rgb(223,219,0);
     display: flex;
-    align-items:center;
-    justify-content: space-between;
-    color: white;
-}
-#footer label{
-    margin: 1%;
+    align-items: center;
+    justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
-    #header button{
-        width: 60px;
+#container{
+    width: 95%;
+    max-width: 800px;
+    min-width: 200px;
+    min-height: 300px;
+    height: 400px;
+    color:#131316
+}
+
+#topCont{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topCont h1{
+    font-size: 4.5rem;
+}
+#centerCont{
+    width: 100%;
+    height:25%;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 2px;
+}
+
+#bottomCont {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+}
+#bottomCont img{
+    height: 40px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+#bottomCont p{
+ margin: 0;
+}
+@media screen and (max-width: 1000px) {
+    #bottomCont p{
+        display: none;
+    }
+    #topCont,#centerCont{
+        text-align: center;
+    }
+    #topCont h1{
+        font-size: 4rem;
     }
 }
-  
