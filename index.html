@@ -3,24 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="photos/gvicon.jpg">
-    <link rel="stylesheet" href="animation.css">
     <title>George Vourkas | Computer Science Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
-        <a href="https://gr.linkedin.com/in/georgios-vourkas-872b89294" target="_blank"><button class="hidden">LinkedIn</button></a>
-        <a href="https://github.com/GeorgeVourkas" target="_blank"><button class="hidden">Github</button></a>
-        <a href="https://twitter.com/georgevourkas" target="_blank" ><button style="width: 50px;" class="hidden">X</button></a>
-        <a href="https://mail.google.com/mail/u/0/#inbox?compose=SxfkdqLRkKhQgLZCxbKMBMBJkrDmRtvpLsTwhlWqFfFXPJQrnSCVGjLrGCgsczhxGXBBmKLdCLgkkhhPjQflDBqKRstqRJKXwZwFbFkjVbTDKxkMkDq" target="_blank"><button  class="hidden">Email</button></a>
-
-    </header>
-
-    <footer id="footer" class="hidden">
-        <label>George Vourkas</label>
-        <label>Computer Science Student Thessaloniki</label>
-    </footer>
-    <script src="animations.js"></script>
+    <main>
+        <header id="header" class="hidden">
+            <a href="https://gr.linkedin.com/in/georgios-vourkas-872b89294" target="_blank"><button>LinkedIn</button></a>
+            <a href="https://github.com/GeorgeVourkas" target="_blank"><button >Github</button></a>
+            <a href="https://twitter.com/georgevourkas" target="_blank" ><button style="width: 50px;" >X</button></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=SxfkdqLRkKhQgLZCxbKMBMBJkrDmRtvpLsTwhlWqFfFXPJQrnSCVGjLrGCgsczhxGXBBmKLdCLgkkhhPjQflDBqKRstqRJKXwZwFbFkjVbTDKxkMkDq" target="_blank"><button>Email</button></a>
+    
+        </header>
+        <div id="mainContainer">
+            <section id="leftSide">
+                <div id="informationDiv" class="hidden">
+                    <div id="hiDiv">
+                        <h3>HI THERE I'M</h3>
+                    </div>
+                    <div id="nameDiv">
+                        <h1>George</h1>
+                        <h1>Vourkas</h1>
+                    </div>
+                    <div id="infoDiv">
+                        <p>I'm a Computer Science student studying</p>
+                        <p>in Thessaliniki Greece </p>
+                    </div>
+                    <div id="contactDiv">
+                        <a href="mailto:geovou04@gmail.com"><button>Contact me</button></a>
+                    </div>
+                </div>
+            </section>
+            <section id="rightSide">
+                <img id="picture" class="hidden" src="myPhoto.jpg">  
+            </section>
+        </div>
+    </main>
+    <script src="animation.js"></script>
 </body>
 </html>
