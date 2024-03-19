@@ -8,6 +8,9 @@ body{
     overflow: hidden;
     background-color: #131316;
 }
+img{
+    user-select: none;
+}
 /*-------------Header----------------*/
 #header{
     position: absolute;
