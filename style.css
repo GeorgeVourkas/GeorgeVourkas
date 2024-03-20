@@ -121,7 +121,7 @@ main{
     font-size: 1rem;
     font-weight: bold;
     animation: backgroundChange 2s infinite alternate;
-    transition: 0.2s ease;
+
 }
 #contactDiv button:hover{
     border: solid white 3px;
