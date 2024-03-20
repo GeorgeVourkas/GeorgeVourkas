@@ -36,10 +36,9 @@ img{
 
 }
 #header button:hover{
-    background-color:teal;
-    color: black;
     border: none;
     transition: all 0.5s ease;
+    animation: backgroundChange 2s infinite alternate;
 
 }
 #header button:active{
@@ -101,11 +100,11 @@ main{
     width: 100%;
     height: 20%;
 
+
 }
 #infoDiv p {
     font-size: 1rem;
     line-height: 1.5;
-    color:teal;
 }
 
 #contactDiv{
@@ -113,8 +112,7 @@ main{
     height:20%;
 }
 #contactDiv button{
-    background-color: teal;
-    color: black;
+    color: white;
     width: 150px;
     height: 50px;
     border-radius: 25px;
@@ -122,12 +120,13 @@ main{
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
+    animation: backgroundChange 2s infinite alternate;
+    transition: 0.2s ease;
 }
 #contactDiv button:hover{
-    background-color: transparent;
-    border: 3px solid teal;
-    color: teal;
-    transition: 0.5s ease;
+    border: solid white 3px;
+    animation: backgroundChange 0.5s infinite alternate;
+
 }
 /*--------------Right----------*/
 #rightSide{
@@ -197,6 +196,13 @@ main{
     #header button{
         width: 80px;
     }
+}
 
-
+@keyframes backgroundChange{
+    0%{
+        background-color: blueviolet;
+    }
+    100%{
+        background-color: teal;
+    }
 }
